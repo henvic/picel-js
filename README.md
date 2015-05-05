@@ -1,4 +1,4 @@
-# picel-js [![Build Status](http://img.shields.io/travis/henvic/picel-js/master.svg?style=flat)](https://travis-ci.org/henvic/picel-js) [![NPM version](http://img.shields.io/npm/v/picel.svg?style=flat)](http://npmjs.org/picel) [![NPM downloads](http://img.shields.io/bower/v/picel.svg?style=flat)](http://npmjs.org/picel)
+# picel-js [![Build Status](http://img.shields.io/travis/henvic/picel-js/master.svg?style=flat)](https://travis-ci.org/henvic/picel-js) [![NPM](http://img.shields.io/npm/v/picel.svg?style=flat)](http://npmjs.org/picel) [![Bower](http://img.shields.io/bower/v/picel.svg?style=flat)](http://bower.io/search/?q=picel)
 
 JavaScript library for string-encoding images to be served using the [picel](https://github.com/henvic/picel) image processing service microservice / middleware.
 

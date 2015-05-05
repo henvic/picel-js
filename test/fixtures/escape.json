@@ -1,0 +1,26 @@
+[
+    {
+    	"input": "",
+    	"expect": ""
+    },
+    {
+    	"input": "_",
+    	"expect": "__"
+    },
+    {
+    	"input": "__",
+    	"expect": "____"
+    },
+    {
+    	"input": "x_",
+    	"expect": "x__"
+    },
+    {
+    	"input": "_y",
+    	"expect": "__y"
+    },
+    {
+    	"input": "x_y",
+    	"expect": "x__y"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "file",
+        "expect": {
+            "id": "file",
+            "extension": "jpg"
+        }
+    },
+    {
+        "filename": "file.out",
+        "expect": {
+            "id": "file",
+            "extension": "out"
+        }
+    },
+    {
+        "filename": "/file.out",
+        "expect": {
+            "id": "file",
+            "extension": "out"
+        }
+    }
+]

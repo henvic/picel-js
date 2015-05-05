@@ -1,0 +1,89 @@
+[
+    {
+        "input": {
+            "backend": "https://foo.com"
+        },
+        "expect": "/s:foo.com"
+    },
+    {
+        "input": {
+            "backend": "https://foo.com",
+            "path": "/foo.png"
+        },
+        "expect": "/s:foo.com/foo_png"
+    },
+    {
+        "input": {
+            "backend": "https://foo.com/",
+            "path": "/foo.png"
+        },
+        "expect": "/s:foo.com/foo_png"
+    },
+    {
+        "input": {
+            "path": "/foo.png",
+            "raw": true
+        },
+        "expect": "/foo_raw.png"
+    },
+    {
+        "input": {
+            "path": "/foo.png",
+            "width": 112,
+            "output": "jpg"
+        },
+        "expect": "/foo_112x_png.jpg"
+    },
+    {
+        "input": {
+            "path": "/foo.png",
+            "width": 154
+        },
+        "expect": "/foo_154x_png"
+    },
+    {
+        "input": {
+            "path": "/foo.jpg",
+            "width": 154,
+            "height": 450
+        },
+        "expect": "/foo_154x450"
+    },
+    {
+        "input": {
+            "path": "/foo.gif",
+            "width": 154,
+            "height": 450
+        },
+        "expect": "/foo_154x450_gif"
+    },
+    {
+        "input": {
+            "backend": "https://images.example.net",
+            "path": "/dog.gif",
+            "width": 650,
+            "height": 295,
+            "crop": {
+                "x": 37,
+                "y": 56,
+                "width": 1300,
+                "height": 590
+            }
+        },
+        "expect": "/s:images.example.net/dog_37x56:1300x590_650x295_gif"
+    },
+    {
+        "input": {
+            "path": "/foo.gif",
+            "width": 650,
+            "height": 295,
+            "crop": {
+                "x": 37,
+                "y": 56,
+                "width": 1300,
+                "height": 590
+            }
+        },
+        "expect": "/foo_37x56:1300x590_650x295_gif"
+    }
+]

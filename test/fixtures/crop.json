@@ -1,0 +1,27 @@
+[
+    {
+         "expect": ""
+    },
+    {
+        "width": 10,
+        "expect": ""
+    },
+    {
+        "height": 10,
+        "expect": ""
+    },
+    {
+        "x": 5,
+        "y": 7,
+        "width": 11,
+        "height": 13,
+        "expect": "5x7:11x13"
+    },
+    {
+        "x": "17",
+        "y": "23",
+        "width": "43",
+        "height": "71",
+        "expect": "17x23:43x71"
+    }
+]

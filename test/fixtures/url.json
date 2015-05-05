@@ -1,0 +1,14 @@
+[
+    {
+    	"input": "",
+    	"expect": ""
+    },
+    {
+    	"input": "http://example.com/",
+    	"expect": "http://example.com"
+    },
+    {
+    	"input": "http://example.com",
+    	"expect": "http://example.com"
+    }
+]

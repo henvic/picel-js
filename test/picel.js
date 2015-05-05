@@ -3,12 +3,11 @@
 var assert = require('assert'),
     picel = require('../picel'),
     urlProvider = require('./fixtures/url.json'),
-    encodeProvider = require('./fixtures/encode.json'),
     filenameProvider = require('./fixtures/filename.json'),
     escapeProvider = require('./fixtures/escape.json'),
     dimensionProvider = require('./fixtures/dimension.json'),
     cropProvider = require('./fixtures/crop.json'),
-    getProvider = require('./fixtures/get.json');
+    encodeProvider = require('./fixtures/encode.json');
 
 it('should normalize urls', function() {
     urlProvider.forEach(function(params) {
@@ -50,11 +49,5 @@ it('should encode crop params', function() {
 it('should encode JSON structs to urls (strings)', function() {
     encodeProvider.forEach(function(params) {
         assert.equal(picel.encode(params.input), params.expect);
-    });
-});
-
-it('should encode JSON structs to absolute urls (strings)', function() {
-    getProvider.forEach(function(params) {
-        assert.equal(picel.get(params.input), params.expect);
     });
 });

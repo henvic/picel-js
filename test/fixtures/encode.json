@@ -1,5 +1,9 @@
 [
     {
+        "input": {},
+        "expect": ""
+    },
+    {
         "input": {
             "backend": "https://foo.com"
         },
@@ -85,5 +89,43 @@
             }
         },
         "expect": "/foo_37x56:1300x590_650x295_gif"
+    },
+    {
+        "input": {
+            "prefix": "https://images.example.com/",
+            "backend": "https://foo.com"
+        },
+        "expect": "https://images.example.com/s:foo.com"
+    },
+    {
+        "input": {
+            "prefix": "https://images.example.com/",
+            "path": "/foo.gif",
+            "width": 650,
+            "height": 295,
+            "crop": {
+                "x": 37,
+                "y": 56,
+                "width": 1300,
+                "height": 590
+            }
+        },
+        "expect": "https://images.example.com/foo_37x56:1300x590_650x295_gif"
+    },
+    {
+        "input": {
+            "prefix": "https://images.example.com/",
+            "backend": "https://foo.com",
+            "path": "/foo.gif",
+            "width": 650,
+            "height": 295,
+            "crop": {
+                "x": 37,
+                "y": 56,
+                "width": 1300,
+                "height": 590
+            }
+        },
+        "expect": "https://images.example.com/s:foo.com/foo_37x56:1300x590_650x295_gif"
     }
 ]

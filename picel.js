@@ -101,8 +101,12 @@ picel.encode = function (image) {
         url = '',
         params = [];
 
+    if (image.prefix) {
+        url = picel._normalizeUrl(image.prefix);
+    }
+
     if (image.backend) {
-        url = '/' + picel._normalizeUrl(picel._compressHost(image.backend));
+        url += '/' + picel._normalizeUrl(picel._compressHost(image.backend));
     }
 
     fileInfo = picel._extractFileInfo(image.path);
@@ -142,16 +146,6 @@ picel.encode = function (image) {
     }
 
     return url;
-};
-
-picel.get = function (image) {
-    var prefix = '';
-
-    if (image.prefix) {
-        prefix = picel._normalizeUrl(image.prefix);
-    }
-
-    return prefix + picel.encode(image);
 };
 
 if (module && module.exports) {

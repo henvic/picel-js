@@ -1,0 +1,29 @@
+{
+  "name": "picel",
+  "version": "0.0.1",
+  "homepage": "https://github.com/henvic/picel-js",
+  "authors": [
+    "Henrique Vicente <henriquevicente@gmail.com>"
+  ],
+  "description": "Picel accompanying tool for encoding images.",
+  "main": "picel.js",
+  "keywords": [
+    "picel",
+    "microservice",
+    "image"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "tasks",
+    "test",
+    "reports",
+    "node_modules",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "gulpfile.js",
+    "package.json"
+  ]
+}

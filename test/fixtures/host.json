@@ -1,0 +1,14 @@
+[
+    {
+    	"input": "https://foo.com",
+    	"expect": "s:foo.com"
+    },
+    {
+    	"input": "http://foo.com",
+    	"expect": "foo.com"
+    },
+    {
+    	"input": "foo.com",
+    	"expect": "foo.com"
+    }
+]

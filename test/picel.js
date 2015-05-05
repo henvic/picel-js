@@ -3,6 +3,7 @@
 var assert = require('assert'),
     picel = require('../picel'),
     urlProvider = require('./fixtures/url.json'),
+    hostProvider = require('./fixtures/host.json'),
     filenameProvider = require('./fixtures/filename.json'),
     escapeProvider = require('./fixtures/escape.json'),
     dimensionProvider = require('./fixtures/dimension.json'),
@@ -16,9 +17,9 @@ it('should normalize urls', function() {
 });
 
 it('should compress hosts', function() {
-    assert.equal(picel._compressHost('https://foo.com'), 's:foo.com');
-    assert.equal(picel._compressHost('http://foo.com'), 'foo.com');
-    assert.equal(picel._compressHost('foo.com'), 'foo.com');
+    hostProvider.forEach(function(params) {
+        assert.equal(picel._compressHost(params.input), params.expect);
+    });
 });
 
 it('should extract FileInfo', function() {
